@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Josefin Sans',"Arial Narrow","Arial","Sans-serif";
+
+}
+.main-div{
+  width: 100%;
+  height: 100vh;
+   background: #6983aa;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  text-align: center;
+}
+.center-div{
+  width: 30%;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  height: 75vh;
+  box-shadow: 10px 10px 50px -10px black;
+}
+h1{
+  color: white;
+  width: 100%;
+  height: 10%;
+  background: transparent;
+  background-color: #8566aa;
+  padding: 6px 0 2px 0;
+  margin-bottom: 10px;
+  margin-top: 5vh;
+  box-shadow: 5px 5px 15px -5px black;
+  font-size: 5vh;
+}
+input{
+  text-align: center;
+  height: 50px;
+  top: 10vh;
+  margin-top: 5vh;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  font-weight: 500;
+  width: 70%;
+  border-bottom: 3px solid #8566aa;
+  outline: none;
+  margin-left: -0vh;
+
+}
+button{
+  min-height: 50px;
+  width: 60px;
+  border-radius: 60%;
+  border-color: transparent;
+  background-color: #8566aa;
+  color: #fff;
+  font-size: 75px;
+  border: none;
+  outline: none;
+  margin-left: 7vh;
+  margin-top: 10px;
+  box-shadow: 5px 5px 15px -5px black;
+}
+button:hover{
+  background-color: #20bf6b;
+}
+ol{
+  margin-top: 40px;
+}
+ol li{
+  padding-left: 10vh ;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #8566aa;
+  text-transform: capitalize;
+}
+.todo-style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo-style .fa-times{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 0px 0 40px;
+  box-shadow: 5px 5px 15px -5px black;
+  color: aliceblue;
+}
+.todo-style .fa-times:hover{
+  background-color: crimson;
+
+}
+.todo-style .fa-times:hover.list-style{
+  color: crimson;
+}
+@media (max-width: 768px){
+  .center-div{
+    width: 55%;
+  }
+  .todo-style .fa-times{
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
+  }
+}
